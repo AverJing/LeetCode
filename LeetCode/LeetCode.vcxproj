@@ -20,9 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="001 Two Sum\solution.h" />
+    <ClInclude Include="002 Add Two Numbers\solution.h" />
+    <ClInclude Include="003 Longest Substring Without Repeat Characters\solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001 Two Sum\test.cpp" />
+    <ClCompile Include="002 Add Two Numbers\test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
