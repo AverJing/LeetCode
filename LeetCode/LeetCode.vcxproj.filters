@@ -27,12 +27,12 @@
     <ClInclude Include="003 Longest Substring Without Repeat Characters\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="007 Reverse Interge\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="001 Two Sum\test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="002 Add Two Numbers\test.cpp">
+    <ClCompile Include="007 Reverse Interge\test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
