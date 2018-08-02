@@ -30,10 +30,14 @@
     <ClInclude Include="007 Reverse Interge\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="007 Reverse Interge\test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="008 String to Interger\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="009 Palindrome Number\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="010 Regular Expression Matching\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

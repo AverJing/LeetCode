@@ -23,9 +23,9 @@
     <ClInclude Include="002 Add Two Numbers\solution.h" />
     <ClInclude Include="003 Longest Substring Without Repeat Characters\solution.h" />
     <ClInclude Include="007 Reverse Interge\solution.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="007 Reverse Interge\test.cpp" />
+    <ClInclude Include="008 String to Interger\solution.h" />
+    <ClInclude Include="009 Palindrome Number\solution.h" />
+    <ClInclude Include="010 Regular Expression Matching\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
