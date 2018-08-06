@@ -52,5 +52,34 @@ Example 5:
 	p = "mis*is*p*."
 	Output: false
 */
+//https://github.com/pezy/LeetCode/tree/master/009.%20Regular%20Expression%20Matching
+//dig the deep meaning
 
-char c = '\u200b';
+#include <string>
+
+using std::string;
+
+class Solution {
+public:
+	bool isMatch(std::string s, std::string p) {
+		if (s.empty() && p.empty()) return true;
+		auto i = 0, j = 0, temp = 0;
+		for (; j != p.size(); ++i, j = temp) {
+			if (p[j+1] != '*') ++temp;
+			else if (isMatch(s.substr(i), p.substr(temp + 2))) return true;
+			if (i == s.size() && p[j] == '.') return false;
+			if (!((p[j] == '.') || s[i] == p[j])) return false;
+		}
+		return i == s.size();
+
+		/*
+		const char *cs = s.c_str(), *cp = p.c_str();
+		for (char c = *cp; c != '\0'; ++cs, c = *cp) {
+		if (cp[1] != '*') ++cp;
+		else if (isMatch(cs, cp + 2)) return true;
+		if (!(c == *cs || (c == '.' && *cs != '\0'))) return false;
+		}
+		return *cs == '\0';*/
+	}
+};
+//"misssssis", "mis*is"

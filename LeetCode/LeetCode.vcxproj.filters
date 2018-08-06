@@ -39,5 +39,16 @@
     <ClInclude Include="010 Regular Expression Matching\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="011 Container With Most Water\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="012 Integer to Roman\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="012 Integer to Roman\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
