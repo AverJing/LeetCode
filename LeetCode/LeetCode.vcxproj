@@ -28,9 +28,11 @@
     <ClInclude Include="010 Regular Expression Matching\solution.h" />
     <ClInclude Include="011 Container With Most Water\solution.h" />
     <ClInclude Include="012 Integer to Roman\solution.h" />
+    <ClInclude Include="013 Roman to Integer\solution.h" />
+    <ClInclude Include="014 Longest Common Prefix\solution.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="012 Integer to Roman\test.cpp" />
+    <ClCompile Include="014 Longest Common Prefix\test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -45,9 +45,15 @@
     <ClInclude Include="012 Integer to Roman\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="013 Roman to Integer\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="014 Longest Common Prefix\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="012 Integer to Roman\test.cpp">
+    <ClCompile Include="014 Longest Common Prefix\test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
