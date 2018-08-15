@@ -51,10 +51,11 @@
     <ClInclude Include="014 Longest Common Prefix\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="014 Longest Common Prefix\test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="015 3Sum\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="016 3Sum Closest\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

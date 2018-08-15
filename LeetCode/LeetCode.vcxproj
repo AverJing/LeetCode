@@ -30,9 +30,8 @@
     <ClInclude Include="012 Integer to Roman\solution.h" />
     <ClInclude Include="013 Roman to Integer\solution.h" />
     <ClInclude Include="014 Longest Common Prefix\solution.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="014 Longest Common Prefix\test.cpp" />
+    <ClInclude Include="015 3Sum\solution.h" />
+    <ClInclude Include="016 3Sum Closest\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
