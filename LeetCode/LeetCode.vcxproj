@@ -32,6 +32,10 @@
     <ClInclude Include="014 Longest Common Prefix\solution.h" />
     <ClInclude Include="015 3Sum\solution.h" />
     <ClInclude Include="016 3Sum Closest\solution.h" />
+    <ClInclude Include="017 Letter Combinations of a Phone Number\solution.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="017 Letter Combinations of a Phone Number\test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

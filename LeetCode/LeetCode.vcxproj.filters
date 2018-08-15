@@ -57,5 +57,13 @@
     <ClInclude Include="016 3Sum Closest\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="017 Letter Combinations of a Phone Number\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="017 Letter Combinations of a Phone Number\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
