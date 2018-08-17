@@ -35,6 +35,9 @@
     <ClInclude Include="017 Letter Combinations of a Phone Number\solution.h" />
     <ClInclude Include="018 4Sum\solution.h" />
     <ClInclude Include="019 Remove Nth Node From End of List\solution.h" />
+    <ClInclude Include="020 Valid Parentheses\solution.h" />
+    <ClInclude Include="021 Merge Two Sorted Lists\solution.h" />
+    <ClInclude Include="022 Generate Parentheses\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

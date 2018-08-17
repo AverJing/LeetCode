@@ -66,5 +66,14 @@
     <ClInclude Include="019 Remove Nth Node From End of List\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="020 Valid Parentheses\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="021 Merge Two Sorted Lists\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="022 Generate Parentheses\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
