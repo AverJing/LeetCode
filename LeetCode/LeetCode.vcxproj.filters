@@ -75,5 +75,26 @@
     <ClInclude Include="022 Generate Parentheses\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="024 Swap Nodes in Pairs\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="025 Reverse Nodes in k-Group\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="026 Remove Duplicates from Sorted Array\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="027 Remove Element\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="028 Implement strStr()\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="029 Divide Two Integers\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="030 Substring with Concatenation of All Words\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

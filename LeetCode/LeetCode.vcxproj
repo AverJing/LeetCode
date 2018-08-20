@@ -38,6 +38,13 @@
     <ClInclude Include="020 Valid Parentheses\solution.h" />
     <ClInclude Include="021 Merge Two Sorted Lists\solution.h" />
     <ClInclude Include="022 Generate Parentheses\solution.h" />
+    <ClInclude Include="024 Swap Nodes in Pairs\solution.h" />
+    <ClInclude Include="025 Reverse Nodes in k-Group\solution.h" />
+    <ClInclude Include="026 Remove Duplicates from Sorted Array\solution.h" />
+    <ClInclude Include="027 Remove Element\solution.h" />
+    <ClInclude Include="028 Implement strStr()\solution.h" />
+    <ClInclude Include="029 Divide Two Integers\solution.h" />
+    <ClInclude Include="030 Substring with Concatenation of All Words\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
