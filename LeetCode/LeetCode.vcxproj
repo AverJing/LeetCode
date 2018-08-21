@@ -45,6 +45,11 @@
     <ClInclude Include="028 Implement strStr()\solution.h" />
     <ClInclude Include="029 Divide Two Integers\solution.h" />
     <ClInclude Include="030 Substring with Concatenation of All Words\solution.h" />
+    <ClInclude Include="031 Next Permutation\solution.h" />
+    <ClInclude Include="032 Longest Valid Parentheses\solution.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="031 Next Permutation\test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

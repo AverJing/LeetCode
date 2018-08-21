@@ -96,5 +96,16 @@
     <ClInclude Include="030 Substring with Concatenation of All Words\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="031 Next Permutation\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="032 Longest Valid Parentheses\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="031 Next Permutation\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
