@@ -47,6 +47,8 @@
     <ClInclude Include="030 Substring with Concatenation of All Words\solution.h" />
     <ClInclude Include="031 Next Permutation\solution.h" />
     <ClInclude Include="032 Longest Valid Parentheses\solution.h" />
+    <ClInclude Include="033 Search in Rotated Sorted Array\solution.h" />
+    <ClInclude Include="034 Find First and Last Position of Element in Sorted Array\solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp" />
