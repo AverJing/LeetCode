@@ -108,6 +108,9 @@
     <ClInclude Include="034 Find First and Last Position of Element in Sorted Array\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="035 Search Insert Position\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp">

@@ -49,6 +49,7 @@
     <ClInclude Include="032 Longest Valid Parentheses\solution.h" />
     <ClInclude Include="033 Search in Rotated Sorted Array\solution.h" />
     <ClInclude Include="034 Find First and Last Position of Element in Sorted Array\solution.h" />
+    <ClInclude Include="035 Search Insert Position\solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp" />
