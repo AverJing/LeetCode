@@ -111,6 +111,12 @@
     <ClInclude Include="035 Search Insert Position\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="036 Valid Sudoku\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="037 Sudoku Solver\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp">
