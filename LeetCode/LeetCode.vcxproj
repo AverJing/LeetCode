@@ -52,9 +52,15 @@
     <ClInclude Include="035 Search Insert Position\solution.h" />
     <ClInclude Include="036 Valid Sudoku\solution.h" />
     <ClInclude Include="037 Sudoku Solver\solution.h" />
+    <ClInclude Include="038 Count and Say\solution.h" />
+    <ClInclude Include="039 Combination Sum\solution.h" />
+    <ClInclude Include="040 Combination Sum II\solution.h" />
+    <ClInclude Include="041 First Missing Positive\solution.h" />
+    <ClInclude Include="042 Trapping Rain Water\solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp" />
+    <ClCompile Include="042 Trapping Rain Water\test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

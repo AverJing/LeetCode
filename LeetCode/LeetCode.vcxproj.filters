@@ -117,9 +117,27 @@
     <ClInclude Include="037 Sudoku Solver\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="038 Count and Say\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="039 Combination Sum\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="040 Combination Sum II\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="041 First Missing Positive\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="042 Trapping Rain Water\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="031 Next Permutation\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="042 Trapping Rain Water\test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
