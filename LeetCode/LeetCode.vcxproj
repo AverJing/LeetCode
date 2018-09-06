@@ -57,10 +57,20 @@
     <ClInclude Include="040 Combination Sum II\solution.h" />
     <ClInclude Include="041 First Missing Positive\solution.h" />
     <ClInclude Include="042 Trapping Rain Water\solution.h" />
+    <ClInclude Include="043 Multiply Strings\solution.h" />
+    <ClInclude Include="044 Wildcard Matching\solution.h" />
+    <ClInclude Include="045 Jump Game II\solution.h" />
+    <ClInclude Include="046 Permutations\solution.h" />
+    <ClInclude Include="047 Permutations II\solution.h" />
+    <ClInclude Include="048 Rotate Image\solution.h" />
+    <ClInclude Include="049 Group Anagrams\solution.h" />
+    <ClInclude Include="050 Pow(x, n)\solution.h" />
+    <ClInclude Include="053 Maximum Subarray\solution.h" />
+    <ClInclude Include="055 Jump Game\solution.h" />
+    <ClInclude Include="056 Merge Intervals\solution.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="031 Next Permutation\test.cpp" />
-    <ClCompile Include="042 Trapping Rain Water\test.cpp" />
+    <ClCompile Include="056 Merge Intervals\test_sort_ex.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
