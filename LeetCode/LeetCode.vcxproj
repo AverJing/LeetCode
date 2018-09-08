@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -68,9 +68,11 @@
     <ClInclude Include="053 Maximum Subarray\solution.h" />
     <ClInclude Include="055 Jump Game\solution.h" />
     <ClInclude Include="056 Merge Intervals\solution.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="056 Merge Intervals\test_sort_ex.cpp" />
+    <ClInclude Include="062 Unique Paths\solution.h" />
+    <ClInclude Include="064 Minimum Path Sum\solution.h" />
+    <ClInclude Include="070 Climbing Stairs\solution.h" />
+    <ClInclude Include="072 Edit Distance\solution.h" />
+    <ClInclude Include="075 Sort Colors\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -142,6 +144,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

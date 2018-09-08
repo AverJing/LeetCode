@@ -165,10 +165,20 @@
     <ClInclude Include="056 Merge Intervals\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="056 Merge Intervals\test_sort_ex.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="062 Unique Paths\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="064 Minimum Path Sum\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="070 Climbing Stairs\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="072 Edit Distance\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="075 Sort Colors\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
