@@ -73,6 +73,9 @@
     <ClInclude Include="070 Climbing Stairs\solution.h" />
     <ClInclude Include="072 Edit Distance\solution.h" />
     <ClInclude Include="075 Sort Colors\solution.h" />
+    <ClInclude Include="076 Minimum Window Substring\solution.h" />
+    <ClInclude Include="078 Subsets\solution.h" />
+    <ClInclude Include="079 Word Search\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

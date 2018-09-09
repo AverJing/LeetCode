@@ -180,5 +180,14 @@
     <ClInclude Include="075 Sort Colors\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="076 Minimum Window Substring\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="078 Subsets\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="079 Word Search\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
