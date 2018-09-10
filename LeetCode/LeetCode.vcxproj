@@ -76,6 +76,9 @@
     <ClInclude Include="076 Minimum Window Substring\solution.h" />
     <ClInclude Include="078 Subsets\solution.h" />
     <ClInclude Include="079 Word Search\solution.h" />
+    <ClInclude Include="084 Largest Rectangle in Histogram\solution.h" />
+    <ClInclude Include="085 Maximal Rectangle\solution.h" />
+    <ClInclude Include="094 Binary Tree Inorder Traversal\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -189,5 +189,14 @@
     <ClInclude Include="079 Word Search\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="084 Largest Rectangle in Histogram\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="085 Maximal Rectangle\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="094 Binary Tree Inorder Traversal\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
