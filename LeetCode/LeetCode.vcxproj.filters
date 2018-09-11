@@ -198,5 +198,17 @@
     <ClInclude Include="094 Binary Tree Inorder Traversal\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="096 Unique Binary Search Trees\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="098 Validate Binary Search Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="100 Same Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="101 Symmetric Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

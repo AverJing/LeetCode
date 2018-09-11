@@ -79,6 +79,10 @@
     <ClInclude Include="084 Largest Rectangle in Histogram\solution.h" />
     <ClInclude Include="085 Maximal Rectangle\solution.h" />
     <ClInclude Include="094 Binary Tree Inorder Traversal\solution.h" />
+    <ClInclude Include="096 Unique Binary Search Trees\solution.h" />
+    <ClInclude Include="098 Validate Binary Search Tree\solution.h" />
+    <ClInclude Include="100 Same Tree\solution.h" />
+    <ClInclude Include="101 Symmetric Tree\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
