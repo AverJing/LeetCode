@@ -219,5 +219,14 @@
     <ClInclude Include="105 Construct Binary Tree from Preorder and Inorder Traversal\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="114 Flatten Binary Tree to Linked List\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="121 Best Time to Buy and Sell Stock\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="124 Binary Tree Maximum Path Sum\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
