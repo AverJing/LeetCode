@@ -89,6 +89,9 @@
     <ClInclude Include="114 Flatten Binary Tree to Linked List\solution.h" />
     <ClInclude Include="121 Best Time to Buy and Sell Stock\solution.h" />
     <ClInclude Include="124 Binary Tree Maximum Path Sum\solution.h" />
+    <ClInclude Include="128 Longest Consecutive Sequence\solution.h" />
+    <ClInclude Include="136 Single Number\solution.h" />
+    <ClInclude Include="139 Word Break\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

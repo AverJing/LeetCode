@@ -228,5 +228,14 @@
     <ClInclude Include="124 Binary Tree Maximum Path Sum\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="128 Longest Consecutive Sequence\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="136 Single Number\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="139 Word Break\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
