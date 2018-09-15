@@ -92,6 +92,10 @@
     <ClInclude Include="128 Longest Consecutive Sequence\solution.h" />
     <ClInclude Include="136 Single Number\solution.h" />
     <ClInclude Include="139 Word Break\solution.h" />
+    <ClInclude Include="141 Linked List Cycle\solution.h" />
+    <ClInclude Include="142 Linked List Cycle II\solution.h" />
+    <ClInclude Include="146 LRU Cache\solution.h" />
+    <ClInclude Include="148 Sort List\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

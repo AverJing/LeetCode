@@ -237,5 +237,17 @@
     <ClInclude Include="139 Word Break\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="141 Linked List Cycle\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="142 Linked List Cycle II\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="146 LRU Cache\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="148 Sort List\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
