@@ -29,3 +29,22 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 			 Total amount you can rob = 2 + 9 + 1 = 12.
 */
 #pragma once
+
+#include <vector>
+#include <algorithm>
+
+using std::vector;
+
+class Solution {
+public:
+	int rob(vector<int>& nums) {
+		if (nums.empty()) return 0;
+		int max = 0, prev1 = 0, prev2 = 0;
+		for (auto e : nums) {
+			int tmp = prev1;
+			prev1 = std::max(prev2 + e, prev1);
+			prev2 = tmp;
+		}
+		return prev1;
+	}
+};

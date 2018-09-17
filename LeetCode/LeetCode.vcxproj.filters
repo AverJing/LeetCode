@@ -264,5 +264,14 @@
     <ClInclude Include="198 House Robber\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="200 Number of Islands\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="206 Reverse Linked List\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="207 Course Schedule\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

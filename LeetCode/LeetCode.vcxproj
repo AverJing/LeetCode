@@ -101,6 +101,9 @@
     <ClInclude Include="160 Intersection of Two Linked Lists\solution.h" />
     <ClInclude Include="169 Majority Element\solution.h" />
     <ClInclude Include="198 House Robber\solution.h" />
+    <ClInclude Include="200 Number of Islands\solution.h" />
+    <ClInclude Include="206 Reverse Linked List\solution.h" />
+    <ClInclude Include="207 Course Schedule\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
