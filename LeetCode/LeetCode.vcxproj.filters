@@ -273,5 +273,17 @@
     <ClInclude Include="207 Course Schedule\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="208 Implement Trie %28Prefix Tree%29-Undone\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="215 Kth Largest Element in an Array\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="218 The Skyline Problem-Undo\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="221 Maximal Square\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

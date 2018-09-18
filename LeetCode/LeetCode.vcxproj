@@ -104,6 +104,10 @@
     <ClInclude Include="200 Number of Islands\solution.h" />
     <ClInclude Include="206 Reverse Linked List\solution.h" />
     <ClInclude Include="207 Course Schedule\solution.h" />
+    <ClInclude Include="208 Implement Trie %28Prefix Tree%29-Undone\solution.h" />
+    <ClInclude Include="215 Kth Largest Element in an Array\solution.h" />
+    <ClInclude Include="218 The Skyline Problem-Undo\solution.h" />
+    <ClInclude Include="221 Maximal Square\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

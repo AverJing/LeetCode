@@ -35,3 +35,45 @@ The input prerequisites is a graph represented by a list of edges, not adjacency
 You may assume that there are no duplicate edges in the input prerequisites.
 */
 #pragma once
+
+#include <vector>
+#include <utility>
+#include <queue>
+
+using std::vector;
+using std::pair;
+using std::queue;
+
+class Solution {
+public:
+	//topological sorting
+	bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
+		vector<vector<int>> graph(numCourses, vector<int>(0));
+		vector<int> outDegree(numCourses, 0);
+		for (auto u : prerequisites) {
+		        graph[u.second].push_back(u.first);
+		        ++outDegree[u.first];
+		
+		}
+		queue<int> que;
+		for (int i = 0; i < numCourses; ++i) {
+		        if (outDegree[i] == 0) que.push(i);
+		
+		}
+		while (!que.empty()) {
+		        int u = que.front();
+		        que.pop();
+		        for (auto v : graph[u]) {
+		                --outDegree[v];
+		                if (outDegree[v] == 0) que.push(v);
+		
+			}
+		
+		}
+		for (int i = 0; i < numCourses; ++i) {
+		        if (outDegree[i] != 0) return false;
+		
+		}
+		return true;
+	}
+};
