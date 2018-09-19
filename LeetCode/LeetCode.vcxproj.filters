@@ -285,5 +285,14 @@
     <ClInclude Include="221 Maximal Square\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="226 Invert Binary Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="234 Palindrome Linked List\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="236 Lowest Common Ancestor of a Binary Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

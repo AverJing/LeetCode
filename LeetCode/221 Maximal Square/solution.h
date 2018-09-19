@@ -27,6 +27,7 @@ Output: 4
 #include <vector>
 #include <algorithm>
 #include <stack>
+#include <cmath>
 
 using std::vector;
 using std::stack;
@@ -39,10 +40,8 @@ public:
 			if (stk.empty() || (i != size && height[stk.top()] <= height[i])) stk.push(i++);
 			else {
 				int tp = stk.top(); stk.pop();
-				if (stk.empty()) 
-					max_area = std::max(max_area, std::min(height[i], i)*std::min(height[i], i));
-				else 
-					max_area = std::max(max_area, std::min(height[i], i - stk.top() - 1)*std::min(height[i], i - stk.top() - 1));
+				int min = std::min(height[tp], (stk.empty() ? i : i - stk.top() - 1));
+				max_area = std::max(max_area, min *min);
 			}
 		return max_area;
 	}
