@@ -111,6 +111,9 @@
     <ClInclude Include="226 Invert Binary Tree\solution.h" />
     <ClInclude Include="234 Palindrome Linked List\solution.h" />
     <ClInclude Include="236 Lowest Common Ancestor of a Binary Tree\solution.h" />
+    <ClInclude Include="238 Product of Array Except Self\solution.h" />
+    <ClInclude Include="239 Sliding Window Maximum\solution.h" />
+    <ClInclude Include="240 Search a 2D Matrix II\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

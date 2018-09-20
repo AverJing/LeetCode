@@ -294,5 +294,14 @@
     <ClInclude Include="236 Lowest Common Ancestor of a Binary Tree\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="238 Product of Array Except Self\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="239 Sliding Window Maximum\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="240 Search a 2D Matrix II\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
