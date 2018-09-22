@@ -303,5 +303,17 @@
     <ClInclude Include="240 Search a 2D Matrix II\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="279 Perfect Squares\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="283 Move Zeroes\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="287 Find the Duplicate Number\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="297 Serialize and Deserialize Binary Tree\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
