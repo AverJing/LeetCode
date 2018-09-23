@@ -88,6 +88,7 @@
     <ClInclude Include="105 Construct Binary Tree from Preorder and Inorder Traversal\solution.h" />
     <ClInclude Include="114 Flatten Binary Tree to Linked List\solution.h" />
     <ClInclude Include="121 Best Time to Buy and Sell Stock\solution.h" />
+    <ClInclude Include="122 Best Time to Buy and Sell Stock II\solution.h" />
     <ClInclude Include="124 Binary Tree Maximum Path Sum\solution.h" />
     <ClInclude Include="128 Longest Consecutive Sequence\solution.h" />
     <ClInclude Include="136 Single Number\solution.h" />
@@ -117,7 +118,10 @@
     <ClInclude Include="279 Perfect Squares\solution.h" />
     <ClInclude Include="283 Move Zeroes\solution.h" />
     <ClInclude Include="287 Find the Duplicate Number\solution.h" />
-    <ClInclude Include="297 Serialize and Deserialize Binary Tree\solution.h" />
+    <ClInclude Include="297 Serialize and Deserialize Binary Tree-Undo\solution.h" />
+    <ClInclude Include="300 Longest Increasing Subsequence\solution.h" />
+    <ClInclude Include="301 Remove Invalid Parentheses-Further\solution.h" />
+    <ClInclude Include="309 Best Time to Buy and Sell Stock with Cooldown\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

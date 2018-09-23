@@ -312,7 +312,19 @@
     <ClInclude Include="287 Find the Duplicate Number\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="297 Serialize and Deserialize Binary Tree\solution.h">
+    <ClInclude Include="300 Longest Increasing Subsequence\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="297 Serialize and Deserialize Binary Tree-Undo\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="301 Remove Invalid Parentheses-Further\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="309 Best Time to Buy and Sell Stock with Cooldown\solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="122 Best Time to Buy and Sell Stock II\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

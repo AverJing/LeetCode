@@ -42,6 +42,7 @@ Your serialize and deserialize algorithms should be stateless.
 #include <iostream>
 #include <string>
 #include <stack>
+#include <sstream>
 
 using std::string;
 using std::stack;
@@ -53,7 +54,8 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
-
+//wrong answer
+/*
 class Codec {
 public:
 
@@ -64,7 +66,9 @@ public:
 
 	// Decodes your encoded data to tree.
 	TreeNode* deserialize(string data) {
-		return buildTree(data.begin(), data.end());
+		//return buildTree(data.begin(), data.end());
+		std::istringstream in(data);
+		return deserialize(in);
 	}
 private:
 	string preOrder(TreeNode* root) {
@@ -74,10 +78,12 @@ private:
 		while (!s.empty() || root) {
 			if (root) {
 				result += root->val + '0';
+				result += ' ';
 				s.push(root);
 				root = root->left;
 			}
 			else {
+				result += '#';
 				auto tmp = s.top();
 				s.pop();
 				root = tmp->right;
@@ -85,11 +91,58 @@ private:
 		}
 		return result;
 	}
+	
 	TreeNode *buildTree(string::iterator preBeg, string::iterator preEnd) {
-		if (preBeg == preEnd || preBeg > preEnd) return nullptr;
+		if (preBeg == preEnd || preBeg > preEnd || *preBeg == '#') return nullptr;
 		TreeNode *root = new TreeNode(*preBeg-'0');
 		root->left = buildTree(next(preBeg), preBeg + (preEnd - preBeg)/2 );
 		root->right = buildTree(preBeg + (preEnd - preBeg) / 2, preEnd);
+		return root;
+	}
+	TreeNode* deserialize(std::istringstream &in) {
+		string val;
+		in >> val;
+		if (val == "#") return nullptr;
+		TreeNode *root = new TreeNode(stoi(val));
+		root->left = deserialize(in);
+		root->right = deserialize(in);
+		return root;
+	}
+};*/
+
+class Codec {
+public:
+
+	// Encodes a tree to a single string.
+	string serialize(TreeNode* root) {
+		std::ostringstream out;
+		serialize(root, out);
+		return out.str();
+	}
+
+	// Decodes your encoded data to tree.
+	TreeNode* deserialize(string data) {
+		std::istringstream in(data);
+		return deserialize(in);
+	}
+private:
+	void serialize(TreeNode *root, std::ostringstream &out) {
+		if (root) {
+			out << root->val << ' ';
+			serialize(root->left, out);
+			serialize(root->right, out);
+		}
+		else {
+			out << "# ";
+		}
+	}
+	TreeNode* deserialize(std::istringstream &in) {
+		string val;
+		in >> val;
+		if (val == "#") return nullptr;
+		TreeNode *root = new TreeNode(std::stoi(val));
+		root->left = deserialize(in);
+		root->right = deserialize(in);
 		return root;
 	}
 };
