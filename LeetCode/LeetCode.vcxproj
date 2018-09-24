@@ -122,6 +122,8 @@
     <ClInclude Include="300 Longest Increasing Subsequence\solution.h" />
     <ClInclude Include="301 Remove Invalid Parentheses-Further\solution.h" />
     <ClInclude Include="309 Best Time to Buy and Sell Stock with Cooldown\solution.h" />
+    <ClInclude Include="322 Coin Change\solution.h" />
+    <ClInclude Include="337 House Robber III\solution.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -20,7 +20,7 @@ using std::string;
 class Solution {
 	void longestPalindrome(const string& s, int b, int e, int &start, int &end) {
 		int len = s.size();
-		while (b > 0 && e < len && s[b] == s[e])
+		while (b >= 0 && e < len && s[b] == s[e])
 			--b, ++e;
 		++b, --e;
 		if (e - b > end - start) {
