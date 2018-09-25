@@ -46,9 +46,7 @@ Explanation: Maximum amount of money the thief can rob = 4 + 5 = 9.
 */
 #pragma once
 #include <iostream>
-#include <stack>
-
-using std::stack;
+#include <algorithm>
 
 //Definition for a binary tree node.
 struct TreeNode {
@@ -60,18 +58,19 @@ struct TreeNode {
 
 class Solution {
 public:
+	int tryRob(TreeNode* root, int& l, int& r) {
+		if (!root)
+			return 0;
+
+		int ll = 0, lr = 0, rl = 0, rr = 0;
+		l = tryRob(root->left, ll, lr);
+		r = tryRob(root->right, rl, rr);
+
+		return std::max(root->val + ll + lr + rl + rr, l + r);
+	}
+
 	int rob(TreeNode* root) {
-		int amount = 0;
-		stack<TreeNode*> stk;
-		while (!stk.empty() || root) {
-			if (root) {
-				stk.push(root);
-				root = root->left;
-			}
-			else {
-				root = stk.top(); stk.pop();
-				root = root->right;
-			}
-		}
+		int l, r;
+		return tryRob(root, l, r);
 	}
 };
