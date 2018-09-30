@@ -128,6 +128,9 @@
     <ClInclude Include="347 Top K Frequent Elements\solution.h" />
     <ClInclude Include="394 Decode String\solution.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PointToOffer\CH02\Ex09Fabonacci.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8F4DDE3D-AB71-4459-8FEB-3B5F0F771E16}</ProjectGuid>
