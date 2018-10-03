@@ -344,7 +344,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PointToOffer\CH02\Ex09Fabonacci.cpp">
+    <ClCompile Include="PointToOffer\CH03\Ex14ReorderArray.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

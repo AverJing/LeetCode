@@ -129,7 +129,7 @@
     <ClInclude Include="394 Decode String\solution.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PointToOffer\CH02\Ex09Fabonacci.cpp" />
+    <ClCompile Include="PointToOffer\CH03\Ex14ReorderArray.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
