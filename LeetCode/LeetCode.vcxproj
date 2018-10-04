@@ -129,7 +129,7 @@
     <ClInclude Include="394 Decode String\solution.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PointToOffer\CH03\Ex14ReorderArray.cpp" />
+    <ClCompile Include="PointToOffer\CH03\Ex18HasSubTree.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
