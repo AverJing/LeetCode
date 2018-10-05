@@ -344,7 +344,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PointToOffer\CH03\Ex18HasSubTree.cpp">
+    <ClCompile Include="PointToOffer\CH04\Ex22IsPopOrder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
