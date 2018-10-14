@@ -129,7 +129,7 @@
     <ClInclude Include="394 Decode String\solution.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PointToOffer\CH04\Ex26CloneComplicatedList.cpp" />
+    <ClCompile Include="PointToOffer\CH05\Ex38FindFirstCommonNode.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
