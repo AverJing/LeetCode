@@ -342,5 +342,13 @@
     <ClInclude Include="394 Decode String\solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="AlgorithmIntro\Level0\CH01\TestCase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgorithmIntro\Level0\CH02\heapSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
