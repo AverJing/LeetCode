@@ -30,7 +30,6 @@ public:
 	std::vector<int>& getArr() { return data; }
 	void Print() { 
 		for (auto e : data) std::cout << e << ' '; 
-		std::cout << std::endl;
 	}
 private:
 	std::vector<int> data;
