@@ -130,7 +130,7 @@
     <ClInclude Include="AlgorithmIntro\Level0\CH01\TestCase.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AlgorithmIntro\Level0\CH05\Code07_CBTNodeCount.cpp" />
+    <ClCompile Include="AlgorithmIntro\Level0\CH08\Code10_getNumber.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
