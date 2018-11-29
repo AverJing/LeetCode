@@ -66,7 +66,7 @@ String getLCS_2(const String& lhs, const String& rhs) {
 
 	int row = 0;//斜线开始的行
 	int coln = rhs.size() - 1; //斜线开始的列
-
+	//code就是能力
 	while (row < lhs.size()) {
 		int i = row;
 		int j = coln;

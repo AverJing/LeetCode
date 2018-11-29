@@ -13,6 +13,7 @@
 
 #include "../CH01/TestCase.h"
 
+//create heap
 template<class T>
 void heapInsert(T& rhs, int index) {
 	while (rhs[index] > rhs[(index - 1) / 2]) {
@@ -21,6 +22,7 @@ void heapInsert(T& rhs, int index) {
 	}
 }
 
+//correct heap
 template<class T>
 void heapify(T& rhs, int index, int size) {
 	//left is left child of index
@@ -39,6 +41,8 @@ void heapify(T& rhs, int index, int size) {
 	}
 }
 
+//O(N*logN) O(1)
+//creat heap O(N)
 template<class T>
 void heapSort(T& rhs) {
 	if (rhs.empty() || rhs.size() < 2) return;

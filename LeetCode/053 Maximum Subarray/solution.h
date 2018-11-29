@@ -45,7 +45,7 @@ public:
 		}
 		return result;
 	}*/
-	//better answer [8,-19,5,-4,20]
+	//better answer [8,-19,5,-4,20]  [-2,1,-3,4,-1,2,1,-5,4]
 	int maxSubArray(vector<int>& nums) {
 		int maxv = nums[0];
 		for (int i = 0, benefited = 0; i != nums.size(); ++i)

@@ -35,6 +35,8 @@ private:
 	std::vector<T> data;
 };
 
+//注意，为了简单化 给出了队列长度
+//但其实可以不给
 template<class T>
 class Queue {
 public:

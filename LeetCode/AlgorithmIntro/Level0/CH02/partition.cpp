@@ -14,6 +14,7 @@
 #include <random>
 
 //给出一个数num，请把小于num的数放在数组的左边，大于num的数放在数组的右边,等于num放在中间
+//O(n) O(1)
 template<class T>
 std::pair<int, int> partitionByNum(T& rhs, int num) {
 	if (rhs.empty() || rhs.size() < 2) return;
@@ -61,6 +62,7 @@ std::pair<int, int> partition_quick(T& rhs, int L, int R) {
 	return { less + 1, more };
 }
 
+//random quick sork   O(N*logN) O(logN)
 template<class T>
 void quickSort(T& rhs, int L, int R) {
 	if (L < R) {

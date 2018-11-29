@@ -36,7 +36,7 @@ int maxGap(const T& rhs) {
 	for (int i = 0; i < rhs.size(); ++i) {
 		auto bid = bucket(rhs[i], rhs.size(), minValue, maxValue);
 		maxInBucket[bid] = empty[bid] ? std::max(maxInBucket[bid], rhs[i]) : rhs[i];
-		minInBucket[bid] = empty[bid] ? std::min(maxInBucket[bid], rhs[i]) : rhs[i];
+		minInBucket[bid] = empty[bid] ? std::min(minInBucket[bid], rhs[i]) : rhs[i];
 		empty[bid] = 1;
 	}
 	int result = 0;

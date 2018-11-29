@@ -71,6 +71,7 @@ public:
 	T peek() {
 		if (queue.empty())
 			throw std::runtime_error("this queue is empty");
+		/*
 		while (queue.size() > 1) {
 			help.push(queue.front());
 		}
@@ -78,7 +79,8 @@ public:
 		queue.pop();
 		help.push(tmp);
 		std::swap(queue, help);
-		return tmp;
+		return tmp;*/
+		return queue.back();
 	}
 private:
 	std::queue<T> queue;
@@ -99,7 +101,10 @@ int main(){
 	for (int i = 0; i < 10; ++i)
 		q.push(i);
 	std::cout << q.pop() << ' ';
+	std::cout << q.peek() << ' ';
 	std::cout << q.pop() << ' ';
+	std::cout << q.peek() << ' ';
 	std::cout << q.pop() << ' ';
+	std::cout << q.peek() << ' ';
 	std::cout << q.pop() << ' ';
 }	

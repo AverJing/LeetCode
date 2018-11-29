@@ -67,7 +67,7 @@ public:
 			cacheList.push_front(newNode);
 			cache[key] = cacheList.begin();
 
-			return cache[key]->value;
+			return newNode.value;
 		}			
 		else
 			return -1;
@@ -93,7 +93,7 @@ public:
 	}
 private:
 	size_t capacity;
-	list<Node> cacheList;
+	list<Node> cacheList;//level from top to buttom
 	unordered_map<int, list<Node>::iterator> cache;
 };
 

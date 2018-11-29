@@ -23,6 +23,7 @@ void Print(const T& rhs) {
 
 //思路，每次从前边冒出来一个最大的数放在后边
 //注意边界条件
+//O(n^2)  O(1)
 template<class T>
 void BubbleSort(T& rhs) {
 	if (rhs.empty() || rhs.size() < 2) return;
@@ -35,6 +36,7 @@ void BubbleSort(T& rhs) {
 }
 
 //思路：每次从待排序的数字中选择最小的放在已排序的数字中
+//O(n^2) O(1)
 template<class T>
 void SelectionSort(T& rhs) {
 	if (rhs.empty() || rhs.size() < 2) return;
@@ -50,6 +52,7 @@ void SelectionSort(T& rhs) {
 }
 
 //思路：依次从未排序的数字中，拿出第一个插入到前边有序数字的合适位置
+//O(n^2) O(1)
 template<class T>
 void InsertionSort(T& rhs) {
 	if (rhs.empty() || rhs.size() < 2) return;
@@ -61,6 +64,7 @@ void InsertionSort(T& rhs) {
 }
 
 //重点    归并排序的实现
+//O(NlogN) O(N)
 template<class T>
 void merge(T& rhs, int L, int mid, int R) {
 	T t(R - L + 1, 0);

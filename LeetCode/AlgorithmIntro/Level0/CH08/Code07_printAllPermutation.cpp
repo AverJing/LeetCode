@@ -47,7 +47,23 @@ void PrintAllPermutation2(std::string s) {
 	}
 }
 
+//排列树
+void process(std::string s, int k) {
+	if (k == s.size()-1) {
+		std::cout << s << std::endl;
+	}
+	for (int j = k; j < s.size(); ++j) {
+		std::swap(s[k], s[j]);
+		process(s, k + 1);
+	}
+}
+
+void PrintAllPermutation3(std::string& s) {
+	process(s, 0);
+}
+
 
 int main(){
-	PrintAllPermutation2("abc");
+	std::string s("abc");
+	PrintAllPermutation3(s);
 }	
