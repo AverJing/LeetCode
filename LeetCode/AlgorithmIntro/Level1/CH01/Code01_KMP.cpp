@@ -38,13 +38,13 @@ Arr getNext(const string& s) {
 	return next;
 }
 
-int isMatch(const string& s1, const string& s2) {
-	if (s1.empty() || s2.empty() || s2.size() > s1.size())return -1;
+int isMatch(const string& s, const string& m) {
+	if (s.empty() || m.empty() || m.size() > s.size())return -1;
 
-	auto next = getNext(s1);
+	auto next = getNext(m);
 	int i = 0, j = 0;
-	for (; i < s1.size() && j < s2.size();) {
-		if (s1[i] == s2[j]) {
+	for (; i < s.size() && j < m.size();) {
+		if (s[i] == m[j]) {
 			++i;
 			++j;
 		}
@@ -56,10 +56,10 @@ int isMatch(const string& s1, const string& s2) {
 		}
 	}
 
-	return j == s2.size() ? i - j : -1;
+	return j == m.size() ? i - j : -1;
 }
 
 int main(){	
-	string s1("aabcaa");
-	std::cout << isMatch(s1, "cca");
+	string s("aabcaa");
+	std::cout << isMatch(s, "caa");
 }	

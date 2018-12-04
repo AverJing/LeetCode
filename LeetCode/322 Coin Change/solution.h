@@ -51,6 +51,7 @@ public:
 		}
 		return result.back();
 	}*/
+	//dp[i]表示凑到i所需要的最少纸币数量
 	int coinChange(vector<int>& coins, int amount) {
 		vector<int> dp(amount + 1, amount + 1);
 		dp[0] = 0;
@@ -61,6 +62,6 @@ public:
 				}
 			}
 		}
-		return dp[amount] == amount + 1 ? -1 : dp[amount];
+		return dp[amount] == amount + 1 ? -1 : dp[amount]; 
 	}
 };

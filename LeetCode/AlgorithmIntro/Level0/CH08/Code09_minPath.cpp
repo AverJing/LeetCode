@@ -55,10 +55,28 @@ int GetMinPath2(Matrix& m) {
 	return m[0][0];
 }
 
+int getMinPath3(Matrix& m) {
+	if (m.empty())return 0;
+
+	std::vector<int> dp(m[0].size(), 0);
+	dp[0] = m[0][0];
+	for (int i = 1; i < m[0].size(); ++i) {
+		dp[i] = dp[i - 1] + m[0][i];
+	}
+
+	for (int i = 1; i < m.size(); ++i) {
+		dp[0] = dp[0] + m[i][0];
+		for (int j = 1; j < m[0].size(); ++j) {
+			dp[j] = std::min(dp[j], dp[j - 1]) + m[i][j];
+		}
+	}
+	return dp[m[0].size() - 1];
+}
+
 int main(){
 	Matrix m{ { 1, 3, 5, 9 }, { 8, 1, 3, 4 }, { 5, 0, 6, 1 }, { 8, 8, 4, 0 } };
 
 	//std::cout << GetMinPath(m);
 
-	std::cout << GetMinPath2(m);
+	std::cout << GetMinPath2(m) << ' ' << getMinPath3(m);
 }	
