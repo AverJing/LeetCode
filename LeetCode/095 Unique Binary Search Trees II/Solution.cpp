@@ -23,6 +23,10 @@ struct TreeNode {
 
 class Solution {
 public:
+	//体会这两种递归的差别
+	//注意添加nullptr可以减少边界处理，巧
+	//第一种没有充分发挥递归的作用，分的过于详细，其实都可以放进递归里边
+	/*
 	vector<TreeNode*> process(int start, int end) {
 		//base case
 		if (start >= end) return {};
@@ -51,7 +55,6 @@ public:
 			auto NodeLeft = process(1, i - 1);
 			auto NodeRight = process(i + 1, n);
 			//在组合。。
-			//这个递归只是提供思路，改写DP
 			for (int k = 0; NodeLeft.empty() || k < NodeLeft.size(); ) {
 				bool signal = false;
 				for (int j = 0; NodeRight.empty() || j < NodeRight.size(); ) {
@@ -72,7 +75,36 @@ public:
 			}
 		}
 		return res;
+	}*/
+	//最好使用unique_ptr
+	/*
+	vector<TreeNode*> GenerateTrees(int start, int end) {
+		vector<TreeNode*> res;
+		if (start > end) res.push_back(nullptr);
+		if (start == end) res.push_back(new TreeNode(start));
+		if (end > start) {
+			for (int i = start; i <= end; ++i) {
+				auto left = GenerateTrees(start, i - 1);
+				auto right = GenerateTrees(i + 1, end);
+
+				for (int j = 0; j < left.size(); ++j) {
+					for (int k = 0; k < right.size(); ++k) {
+						auto head = new TreeNode(i);
+						head->left = left[j];
+						head->right = right[k];
+						res.push_back(head);
+					}
+				}
+			}
+		}
+		return res;
 	}
+
+	vector<TreeNode*> generateTrees(int n) {
+		if (n < 1) return{};
+
+		return GenerateTrees(1, n);
+	}*/
 };
 
 int main(){

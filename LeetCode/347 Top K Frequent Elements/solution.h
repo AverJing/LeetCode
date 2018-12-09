@@ -45,7 +45,7 @@ public:
 		}
 
 		vector<int> ret;
-
+		//有些提交的答案 用的是nth_element算法
 		priority_queue<pair<int, int>> count;
 		for (auto& e : frequence) {
 			count.push(std::make_pair(e.second, e.first));

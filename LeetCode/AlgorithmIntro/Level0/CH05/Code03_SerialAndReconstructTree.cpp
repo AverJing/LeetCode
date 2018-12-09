@@ -56,6 +56,7 @@ std::string  serialTreeByPost(Ptr head) {
 	return res;
 }
 
+//其实利用istringstream更好 利用空格来区分
 std::vector<std::string> splitByPara(std::string preStr, const std::string& para = "_") {
 	if (preStr.empty()) return {};
 	std::vector<std::string> data;

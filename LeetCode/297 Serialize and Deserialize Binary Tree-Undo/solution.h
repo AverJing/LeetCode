@@ -147,6 +147,38 @@ private:
 	}
 };
 
+class Codec {
+public:
+
+	// Encodes a tree to a single string.
+	string serialize(TreeNode* root) {
+		if (!root) return "# ";
+
+		string result = std::to_string(root->val)+" ";
+		result += serialize(root->left);
+		result += serialize(root->right);
+
+		return result;
+	}
+
+	// Decodes your encoded data to tree.
+	TreeNode* deserialize(string data) {
+		std::istringstream in(data);
+		return deserialize(in);
+
+	}
+private:
+	TreeNode* deserialize(std::istringstream &in) {
+		string val;
+		in >> val;
+		if (val == "#") return nullptr;
+		TreeNode *root = new TreeNode(std::stoi(val));
+		root->left = deserialize(in);
+		root->right = deserialize(in);
+		return root;
+	}
+};
+
 // Your Codec object will be instantiated and called as such:
 // Codec codec;
 // codec.deserialize(codec.serialize(root));

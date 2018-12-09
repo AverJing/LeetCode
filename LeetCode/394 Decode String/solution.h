@@ -28,7 +28,7 @@ s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 */
 #pragma once
-
+//如何加密呢？  反向过程怎么做？  网易面试考过。
 #include <string>
 #include <stack>
 

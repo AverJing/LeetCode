@@ -28,18 +28,19 @@ Explanation: transactions = [buy, sell, cooldown, buy, sell]
 #pragma once
 
 #include <vector>
+#include <algorithm>
 
 using std::vector;
-
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75927/Share-my-thinking-process
 class Solution {
 public:
 	int maxProfit(vector<int>& prices) {
 		int buy(INT_MIN), sell(0), prev_sell(0), prev_buy;
 		for (int price : prices) {
 			prev_buy = buy;
-			buy = max(prev_sell - price, buy);
+			buy = std::max(prev_sell - price, buy);
 			prev_sell = sell;
-			sell = max(prev_buy + price, sell);
+			sell = std::max(prev_buy + price, sell);
 		}
 		return sell;
 	}

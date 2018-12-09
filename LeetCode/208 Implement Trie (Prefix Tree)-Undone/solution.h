@@ -33,6 +33,8 @@ All inputs are guaranteed to be non-empty strings.
 using std::string;
 using std::unordered_set;
 
+//这个实现的太假了
+
 class Trie {
 public:
 	/** Initialize your data structure here. */
@@ -53,13 +55,16 @@ public:
 	/** Returns if there is any word in the trie that starts with the given prefix. */
 	bool startsWith(string prefix) {
 		for (auto &e : trie) {
-			if(e.find(prefix) != string::npos) return true;
+			auto index = e.find(prefix);
+			if(index != string::npos && index==0) return true;
+			//之前没有A的原因在这里
 		}
 		return false;
 	}
 private:
 	unordered_set<string> trie;
 };
+
 
 /**
  * Your Trie object will be instantiated and called as such:
