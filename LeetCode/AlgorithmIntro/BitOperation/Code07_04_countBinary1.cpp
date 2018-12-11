@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <bitset>
+#include "../Level0/CH01/TestCase.h"
 
 int count1(int n) {
 	int res = 0;
@@ -42,10 +43,10 @@ int count3(int n) {
 //平行算法
 int count4(int n) {
 	n = (n & 0x55555555) + ((n >> 1) & 0x55555555); //2
-	n = (n & 0x33333333) + ((n >> 1) & 0x33333333); //4
-	n = (n & 0x0f0f0f0f) + ((n >> 1) & 0x0f0f0f0f); //8
-	n = (n & 0x00ff00ff) + ((n >> 1) & 0x00ff00ff); //16
-	n = (n & 0x0000ffff) + ((n >> 1) & 0x0000ffff); //32
+	n = (n & 0x33333333) + ((n >> 2) & 0x33333333); //4
+	n = (n & 0x0f0f0f0f) + ((n >> 4) & 0x0f0f0f0f); //8
+	n = (n & 0x00ff00ff) + ((n >> 8) & 0x00ff00ff); //16
+	n = (n & 0x0000ffff) + ((n >> 16) & 0x0000ffff); //32
 
 	return n;
 }
@@ -59,5 +60,12 @@ int count5(int n) {
 }
 
 int main(){
-	
+	testCase t(10, 500);
+
+	for (auto e : t.getArr()) {
+		std::cout << e << ' ' << count1(e) << ' ' << count2(e)
+			<< ' ' << count3(e)
+			<< ' ' << count4(e)
+			<< ' ' << count5(e) << '\n';
+	}
 }	

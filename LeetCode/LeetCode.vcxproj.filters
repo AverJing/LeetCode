@@ -347,7 +347,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AlgorithmIntro\BitOperation\Code07_04_countBinary1.cpp">
+    <ClCompile Include="394 Decode String\Solution.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

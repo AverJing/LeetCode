@@ -58,15 +58,37 @@ public:
 	}*/
 	string decodeString(string s) {
 		int frequence = 0;
-		stack<string::iterator> stk;
+		stack<string> stk;
+		stack<int> time;
 		string result;
-		for (auto it = s.begin(); it != s.end(); ++it) {
-			if (*it == ']') {
-				stk.pop();
-				frequence = *stk.top();
-
+		for (auto it = s.begin(); it != s.end(); ) {
+			if (*it <= '9'&&*it >= '0') {
+				int num = 0;
+				while (*it <= '9'&&*it >= '0') {
+					num = num * 10 + (*it - '0');
+					++it;
+				}
+				time.push(num);
 			}
-			if (!isalpha(*it)) stk.push(it);
+			else if (*it == '[') {
+				stk.push(result);
+				result = "";
+				++it;
+			}
+			else if (*it == ']') {
+				auto frequence = time.top();
+				time.pop();
+				auto tmp = stk.top();
+				stk.pop();
+				for (; frequence--;)
+					tmp.append(result);
+				result = tmp;
+				++it;
+			}
+			else {
+				result += *it;
+				++it;
+			}
 		}
 		return result;
 	}
