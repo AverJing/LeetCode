@@ -71,7 +71,7 @@ int getNum2(const Arr& data, int k) {
 		if (qmax.front() == data[L])
 			qmax.pop_front();
 
-		res += R - L;
+		res += R - L;//以L为左边界，R为右边界，所有符合条件的子数组数量。
 		++L;
 	}
 	return res;
