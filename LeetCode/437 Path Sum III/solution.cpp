@@ -49,6 +49,7 @@ struct TreeNode {
 
 class Solution {
 public:
+	//尝试优化，可以去掉num，用sum来判断。
 	void process(TreeNode* root, int sum, int& res, int num, bool sym) {
 		if (num == sum)
 			++res;
@@ -65,6 +66,30 @@ public:
 		process(root, sum, res, 0, false);
 		return res/2;
 	}
+	//思路本质上是一样的。
+	//比我的好很多。
+	//可是为什么提交结果差不少呢？
+	//参数变量？
+	/*
+	public:
+    int pathSum(TreeNode* root, int sum) {
+        std::array<int, 3> count = {0};
+        if (root) {
+            pathSum(root, sum, count[0]);
+            count[1] = pathSum(root->left, sum);
+            count[2] = pathSum(root->right, sum);
+        }
+        return std::accumulate(count.begin(), count.end(), 0);
+    }
+
+private:
+    void pathSum(TreeNode *root, int sum, int &count) {
+        sum -= root->val;
+        if (0 == sum) ++count;
+        if (root->left) pathSum(root->left, sum, count);
+        if (root->right) pathSum(root->right, sum, count);
+    }
+	*/
 };
 
 int main(){
