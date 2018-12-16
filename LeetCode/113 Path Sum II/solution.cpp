@@ -80,8 +80,9 @@ public:
 		if (sum == 0 && !root->left && !root->right) {
 			res.push_back(tmp);
 		}
-		process(root->left, sum, res, tmp);
-		process(root->right, sum, res, tmp);
+		//可以提前加判断，减少递归次数
+		if(root->left) process(root->left, sum, res, tmp);
+		if(root->right) process(root->right, sum, res, tmp);
 	}
 	vector<vector<int>> pathSum(TreeNode* root, int sum) {
 		vector<vector<int>> res;
