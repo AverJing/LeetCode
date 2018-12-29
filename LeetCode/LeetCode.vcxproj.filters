@@ -346,12 +346,4 @@
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="438 Find All Anagrams in a String\test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="451 Sort Characters By Frequency\solution.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

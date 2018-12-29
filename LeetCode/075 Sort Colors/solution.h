@@ -55,6 +55,7 @@ public:
 		}
 		nums = result;
 	}*/
+	/*
 	void sortColors(vector<int>& nums) {
 		if (nums.size() < 2) return;
 		//order of variable initialization in for(beg, end) is not from left to right. random.
@@ -71,5 +72,27 @@ public:
 				}
 			}
 		}
+	}*/
+
+	void sortColors(vector<int>& nums) {
+		if (nums.size() < 2) return;
+		
+		int zero = -1, one = 0, two = nums.size();
+
+		while (one < two) {
+			if (nums[one] == 0) {
+				swap(nums, ++zero, one++);
+			}
+			else if (nums[one] == 2) {
+				swap(nums, --two, one);
+			}
+			else {
+				++one;
+			}
+		}
+	}
+
+	void swap(vector<int>& nums, int i, int j) {
+		std::swap(nums[i], nums[j]);
 	}
 };

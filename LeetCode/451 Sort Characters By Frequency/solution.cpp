@@ -47,13 +47,37 @@ Note that 'A' and 'a' are treated as two different characters.
 */
 #include <iostream>
 #include <string>
+#include <unordered_map>
+#include <vector>
+#include <map>
 
 using std::string;
+using std::unordered_map;
+using std::vector;
+using std::map;
 
 class Solution {
 public:
 	string frequencySort(string s) {
+		map<char, int> charCount;
 
+		for (auto e : s)
+			++charCount[e];
+
+		vector<string> result(s.size()+1, "\0");
+		for (auto& e : charCount) {
+			result[e.second].push_back(e.first);
+		}
+
+		string res;
+		for (int i = s.size(); i>= 0; --i) {
+			if (result[i] != "\0") {
+				for (auto c : result[i])
+					res += string(i, c);
+			}
+		}
+
+		return res;
 	}
 };
 
