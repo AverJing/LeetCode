@@ -39,6 +39,9 @@ using std::priority_queue;
 
 class Solution {
 public:
+	//按某种方式贪心
+	//为了使插入操作不影响后续的操作，身高比较高的先插入。
+	//排序应该按照  身高从小到大，且k值升序（身高相同）
 	vector<pair<int, int>> reconstructQueue(vector<pair<int, int>>& people) {
 		auto compare = [](const pair<int, int>& lhs, const pair<int, int>& rhs) {return lhs.first < rhs.first || (lhs.first == rhs.first && lhs.second > rhs.second); };
 		auto compareForSet = [](const pair<int, int>& lhs, const pair<int, int>& rhs) {return lhs.first > rhs.first || (lhs.first == rhs.first && lhs.second < rhs.second); };
