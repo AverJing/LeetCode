@@ -30,15 +30,26 @@ Note: The n belongs to [1, 10,000].
 #include <vector>
 
 using std::vector;
+using std::string;
 
+//https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC++-Simple-greedy-like-solution-with-explanation
 class Solution {
 public:
 	bool checkPossibility(vector<int>& nums) {
-
+		int cnt = 0;
+		for (int i = 1; i < nums.size(); ++i) {
+			if (nums[i] < nums[i - 1]) {
+				++cnt;
+				if (i - 2 <= 0 || nums[i - 2] <= nums[i]) nums[i - 1] = nums[i];
+				else nums[i] = nums[i - 1];
+			}
+		}
+		return cnt < 2;
 	}
 };
 
+
 int main(){
-	
+
 	return 0;
 }

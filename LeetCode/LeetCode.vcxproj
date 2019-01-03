@@ -129,9 +129,6 @@
     <ClInclude Include="394 Decode String\solution.h" />
     <ClInclude Include="AlgorithmIntro\Level0\CH01\TestCase.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="665 Non-decreasing Array\solution.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8F4DDE3D-AB71-4459-8FEB-3B5F0F771E16}</ProjectGuid>
