@@ -43,19 +43,19 @@ public:
 	Queue(unsigned size) :start(0),end(0),size(0) { data.resize(size, 0); }
 	void push(const T& rhs) {
 		if (size >= data.size())
-			throw std::runtime_error("the stack is full.");
+			throw std::runtime_error("the queue is full.");
 		++size;
 		data[end++%data.size()] = rhs;
 	}
 	T pop() {
 		if (size == 0)
-			throw std::runtime_error("the stack is empty.");
+			throw std::runtime_error("the queue is empty.");
 		--size;
 		return data[start++%data.size()];
 	}
 	T peek() {
 		if (size == 0)
-			throw std::runtime_error("the stack is empty.");
+			throw std::runtime_error("the queue is empty.");
 		return data[start];
 	}
 private:

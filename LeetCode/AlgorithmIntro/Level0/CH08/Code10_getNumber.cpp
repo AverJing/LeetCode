@@ -26,6 +26,7 @@ bool getNumber(std::vector<int>& arr, int aim) {
 	process(arr, 0, 0, aim);
 }
 
+//结合递归分析
 bool getNumber2(std::vector<int>& arr, int aim) {
 	std::vector<std::vector<bool>> dp(arr.size() + 1, std::vector<bool>(aim + 1, false));
 	

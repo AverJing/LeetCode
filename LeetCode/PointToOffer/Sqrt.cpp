@@ -35,9 +35,11 @@ float FastInvSqrt(float x) {
 	x = *(float*)&i;
 	x = x * (1.5f - (xhalf*x*x));
 	return x;
-}  //这个算法求得是   1/sqrt(x)
+}  
+
+//这个算法求得是   1/sqrt(x)
 
 int main(){
 	//std::cout << custom_sqrt(1800);
-	std::cout << FastInvSqrt(180000000000);
+	//std::cout << FastInvSqrt(180000000000);
 }	

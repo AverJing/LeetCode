@@ -27,6 +27,8 @@ template<class T>
 class Union {
 public:
 	using sets = std::vector<Node<T>>;
+
+	//将每个节点看作每个独立的集合
 	void makeSets(sets& nodes) {
 		if (!fatherMap.empty())
 			fatherMap.clear();
@@ -39,9 +41,12 @@ public:
 		}
 	}
 
+	//根据根节点是否是一样的进行判断
 	bool isSameSet(const Node<T>& lhs,const Node<T>& rhs) {
 		return findHead(lhs) == findHead(rhs);
 	}
+
+	//两个集合合并，将集合元素少的合并到集合元素数量多的。
 	void unionSet(const Node<T>& a, const Node<T>& b) {
 		auto ahead = findHead(a);
 		auto bhead = findHead(b);
@@ -65,10 +70,11 @@ private:
 	HashMap fatherMap;
 	std::unordered_map<Node<T>, size_t> sizeMap;
 
+	//在找head节点的过程中，将所有的子节点都直接指向head
 	Node<T> findHead(const Node<T>& node) {
 		auto father = fatherMap[node];
 		if (father != node) {
-			father = fatherMap[father]; 
+			father = findHead[father];
 		}
 		fatherMap[node] = father;//optimization
 		return father;

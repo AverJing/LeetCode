@@ -24,6 +24,7 @@ For the purpose of this problem, assume that your function returns 0 when the re
 
 #include <string>
 #include <climits>
+#include <iostream>
 
 using std::string;
 

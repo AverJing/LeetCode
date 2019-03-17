@@ -30,6 +30,8 @@ std::pair<bool, int> process(Ptr head) {
 	auto rightData = process(head->right);
 	if (!rightData.first)
 		return { false, 0 };
+	if (std::abs(rightData.first - leftData.first) > 1)
+		return { false, 0 };
 
 	return { true, std::max(leftData.second, rightData.second) + 1 };
 }

@@ -32,7 +32,7 @@ struct TrieNode {
 class TrieTree {
 public:
 	TrieTree() :root(new TrieNode()) {};
-	void insertNode(const String& s) {
+	void insertNode(const string& s) {
 		if (s.empty()) return;
 		
 		auto node = root;
@@ -67,7 +67,7 @@ public:
 				if (--node->next[index]->path == 0) {
 					node->next[index] = nullptr;       //此处就算使用了智能指针，会内存泄漏吗
 					return;					//类比问题，用智能指针实现的链表，故意断链，会自动释放内存吗
-				}
+				}							//还是会泄露的
 				node = node->next[index];
 			}
 			--node->end;

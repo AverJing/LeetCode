@@ -8,6 +8,7 @@
 *
 */
 /*
+No 392
 Given a string s and a string t, check if s is subsequence of t.
 
 You may assume that there is only lower case English letters in both s 
